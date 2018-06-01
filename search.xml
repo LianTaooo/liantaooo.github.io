@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Deep Learning Framework]]></title>
+    <url>%2F2018%2F06%2F01%2FDeep-Learning-Framework%2F</url>
+    <content type="text"><![CDATA[Framework choice?]]></content>
+      <tags>
+        <tag>deep learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[code example]]></title>
     <url>%2F2018%2F04%2F13%2Fcode-example%2F</url>
     <content type="text"><![CDATA[MATLAB 画出的图形输出为矢量图12345678910111213141516171819202122232425262728293031% 创建figure对象Fig = figure(... &apos;Units&apos;, &apos;pixels&apos;,... &apos;Name&apos;, &apos;move2&apos;,... &apos;NumberTitle&apos;, &apos;off&apos;,... &apos;IntegerHandle&apos;, &apos;off&apos;);% 创建axes对象, 设定坐标轴属性AxesH = axes(... &apos;Parent&apos;, Fig,... &apos;Xlim&apos;, [-10 50],... &apos;Ylim&apos;, [-10 40],... &apos;XGrid&apos;, &apos;on&apos;,... &apos;YGrid&apos;, &apos;on&apos;,... &apos;DataAspectRatio&apos;, [1 1 1],... &apos;Visible&apos;, &apos;on&apos;); t = linspace(0,45,101)*pi/180;x = 40*cos(t);y = 40*sin(t);realtrace = line(AxesH, x, y,&apos;linewidth&apos;,2);precisetrace = line(AxesH,[x(1) x(end)] ,[y(1) y(end)],... &apos;color&apos;,&apos;g&apos;,... &apos;linewidth&apos;,2,... &apos;linestyle&apos;,&apos;--&apos;);legend(AxesH,[realtrace,precisetrace],... &apos;真实运动轨迹&apos;,&apos;精确运动轨迹&apos;,... &apos;location&apos;,&apos;northwest&apos;);% 指定保存路径和格式saveas(Fig,[&apos;D:\abc\&apos; Fig.Name],&apos;pdf&apos;)]]></content>
