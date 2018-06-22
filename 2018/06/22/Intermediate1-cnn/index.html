@@ -88,17 +88,18 @@
 
 
 
-<meta name="description" content="Winter Lover">
+<meta name="description" content="MNIST两个卷积, 一个全连接;test error &amp;lt; 1%">
 <meta name="keywords" content="Recharge">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Liantaooo">
-<meta property="og:url" content="http://liantaooo.github.io/categories/Lyric/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Intermediate1-cnn">
+<meta property="og:url" content="http://liantaooo.github.io/2018/06/22/Intermediate1-cnn/index.html">
 <meta property="og:site_name" content="Liantaooo">
-<meta property="og:description" content="Winter Lover">
+<meta property="og:description" content="MNIST两个卷积, 一个全连接;test error &amp;lt; 1%">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-06-22T14:30:22.578Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Liantaooo">
-<meta name="twitter:description" content="Winter Lover">
+<meta name="twitter:title" content="Intermediate1-cnn">
+<meta name="twitter:description" content="MNIST两个卷积, 一个全连接;test error &amp;lt; 1%">
 
 
 
@@ -128,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://liantaooo.github.io/categories/Lyric/"/>
+  <link rel="canonical" href="http://liantaooo.github.io/2018/06/22/Intermediate1-cnn/"/>
 
 
 
 
 
-  <title>Category: Lyric | Liantaooo</title>
+  <title>Intermediate1-cnn | Liantaooo</title>
   
 
 
@@ -153,7 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -285,55 +286,186 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Lyric<small>Category</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://liantaooo.github.io/2018/06/22/Intermediate1-cnn/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tao Lian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/hunter-of-the-wild.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Liantaooo">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/08/14/The-Bigbang-Theory/" itemprop="url">
-              
-                <span itemprop="name">The Bigbang Theory</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Intermediate1-cnn</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-14T12:07:36+08:00"
-              content="2017-08-14" >
-          08-14
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-22T20:51:17+08:00">
+                2018-06-22
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/22/Intermediate1-cnn/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/06/22/Intermediate1-cnn/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  475
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <h5 id="MNIST"><a href="#MNIST" class="headerlink" title="MNIST"></a>MNIST</h5><h5 id="两个卷积-一个全连接-test-error-lt-1"><a href="#两个卷积-一个全连接-test-error-lt-1" class="headerlink" title="两个卷积, 一个全连接;test error &lt; 1%"></a>两个卷积, 一个全连接;test error &lt; 1%</h5><a id="more"></a>
+<figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> torchvision</span><br><span class="line"><span class="keyword">import</span> torchvision.transforms <span class="keyword">as</span> transforms</span><br><span class="line"></span><br><span class="line"><span class="meta"># Device configuration</span></span><br><span class="line"><span class="title">device</span> = torch.device('cuda:<span class="number">0</span>' <span class="keyword">if</span> torch.cuda.is_available() <span class="keyword">else</span> 'cpu')</span><br><span class="line"></span><br><span class="line"><span class="meta"># Hyper parameters</span></span><br><span class="line"><span class="title">num_epochs</span> = <span class="number">5</span></span><br><span class="line"><span class="title">num_classes</span> = <span class="number">10</span></span><br><span class="line"><span class="title">batch_size</span> = <span class="number">100</span></span><br><span class="line"><span class="title">learning_rate</span> = <span class="number">0.001</span></span><br><span class="line"></span><br><span class="line"><span class="meta"># MNIST dataset</span></span><br><span class="line"><span class="title">train_dataset</span> = torchvision.datasets.<span class="type">MNIST</span>(root='./<span class="class"><span class="keyword">data</span>/mnist/',</span></span><br><span class="line">                                           train=<span class="type">True</span>,</span><br><span class="line">                                           transform=transforms.<span class="type">ToTensor</span>(),</span><br><span class="line">                                           download=<span class="type">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="title">test_dataset</span> = torchvision.datasets.<span class="type">MNIST</span>(root='./<span class="class"><span class="keyword">data</span>//mnist/',</span></span><br><span class="line">                                          train=<span class="type">False</span>,</span><br><span class="line">                                          transform=transforms.<span class="type">ToTensor</span>())</span><br><span class="line"></span><br><span class="line"><span class="meta"># Data loader</span></span><br><span class="line"><span class="title">train_loader</span> = torch.utils.<span class="class"><span class="keyword">data</span>.<span class="type">DataLoader</span>(<span class="title">dataset</span>=<span class="title">train_dataset</span>,</span></span><br><span class="line"><span class="class">                                           <span class="title">batch_size</span>=<span class="title">batch_size</span>,</span></span><br><span class="line"><span class="class">                                           <span class="title">shuffle</span>=<span class="type">True</span>)</span></span><br><span class="line"></span><br><span class="line"><span class="title">test_loader</span> = torch.utils.<span class="class"><span class="keyword">data</span>.<span class="type">DataLoader</span>(<span class="title">dataset</span>=<span class="title">test_dataset</span>,</span></span><br><span class="line"><span class="class">                                          <span class="title">batch_size</span>=<span class="title">batch_size</span>,</span></span><br><span class="line"><span class="class">                                          <span class="title">shuffle</span>=<span class="type">False</span>)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta"># Convolutional neural network (two convolutional layers)</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="type">ConvNet</span>(<span class="title">nn</span>.<span class="type">Module</span>):</span></span><br><span class="line"><span class="class">    def __init__(<span class="title">self</span>, <span class="title">num_classes</span>=10):</span></span><br><span class="line"><span class="class">        super(<span class="type">ConvNet</span>, <span class="title">self</span>).__init__()</span></span><br><span class="line"><span class="class">        self.layer1 = nn.<span class="type">Sequential</span>(</span></span><br><span class="line"><span class="class">            <span class="title">nn</span>.<span class="type">Conv2d</span>(1, 16, <span class="title">kernel_size</span>=5, <span class="title">stride</span>=1, <span class="title">padding</span>=2),</span></span><br><span class="line"><span class="class">            nn.<span class="type">BatchNorm2d</span>(16),</span></span><br><span class="line"><span class="class">            nn.<span class="type">ReLU</span>(),</span></span><br><span class="line"><span class="class">            nn.<span class="type">MaxPool2d</span>(<span class="title">kernel_size</span>=2, <span class="title">stride</span>=2))</span></span><br><span class="line"><span class="class">        self.layer2 = nn.<span class="type">Sequential</span>(</span></span><br><span class="line"><span class="class">            <span class="title">nn</span>.<span class="type">Conv2d</span>(16, 32, <span class="title">kernel_size</span>=5, <span class="title">stride</span>=1, <span class="title">padding</span>=2),</span></span><br><span class="line"><span class="class">            nn.<span class="type">BatchNorm2d</span>(32),</span></span><br><span class="line"><span class="class">            nn.<span class="type">ReLU</span>(),</span></span><br><span class="line"><span class="class">            nn.<span class="type">MaxPool2d</span>(<span class="title">kernel_size</span>=2, <span class="title">stride</span>=2))</span></span><br><span class="line"><span class="class">        self.fc = nn.<span class="type">Linear</span>(7 * 7 * 32, <span class="title">num_classes</span>)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">    def forward(<span class="title">self</span>, <span class="title">x</span>):</span></span><br><span class="line"><span class="class">        out = self.layer1(<span class="title">x</span>)</span></span><br><span class="line"><span class="class">        out = self.layer2(<span class="title">out</span>)</span></span><br><span class="line"><span class="class">        out = out.reshape(<span class="title">out</span>.<span class="title">size</span>(0), -1)  #行为样本数</span></span><br><span class="line"><span class="class">        out = self.fc(<span class="title">out</span>)</span></span><br><span class="line"><span class="class">        return out</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">model = <span class="type">ConvNet</span>(<span class="title">num_classes</span>).to(<span class="title">device</span>)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"># <span class="type">Loss</span> and optimizer</span></span><br><span class="line"><span class="class">criterion = nn.<span class="type">CrossEntropyLoss</span>()</span></span><br><span class="line"><span class="class">optimizer = torch.optim.<span class="type">Adam</span>(<span class="title">model</span>.<span class="title">parameters</span>(), lr=learning_rate)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"># <span class="type">Train</span> the model</span></span><br><span class="line"><span class="class">total_step = len(<span class="title">train_loader</span>)</span></span><br><span class="line"><span class="class">for epoch in range(<span class="title">num_epochs</span>):</span></span><br><span class="line"><span class="class">    for i, (<span class="title">images</span>, <span class="title">labels</span>) in enumerate(<span class="title">train_loader</span>):</span></span><br><span class="line"><span class="class">        images = images.to(<span class="title">device</span>)</span></span><br><span class="line"><span class="class">        labels = labels.to(<span class="title">device</span>)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">        # <span class="type">Forward</span> pass</span></span><br><span class="line"><span class="class">        outputs = model(<span class="title">images</span>)</span></span><br><span class="line"><span class="class">        loss = criterion(<span class="title">outputs</span>, <span class="title">labels</span>)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">        # <span class="type">Backward</span> and optimize</span></span><br><span class="line"><span class="class">        optimizer.zero_grad()</span></span><br><span class="line"><span class="class">        loss.backward()</span></span><br><span class="line"><span class="class">        optimizer.step()</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">        if (<span class="title">i</span> + 1) % 100 == 0:</span></span><br><span class="line"><span class="class">            print('<span class="type">Epoch</span> [&#123;&#125;/&#123;&#125;], <span class="type">Step</span> [&#123;&#125;/&#123;&#125;], <span class="type">Loss</span>: &#123;:.4<span class="title">f</span>&#125;'</span></span><br><span class="line"><span class="class">                  .<span class="title">format</span>(<span class="title">epoch</span> + 1, <span class="title">num_epochs</span>, <span class="title">i</span> + 1, <span class="title">total_step</span>, <span class="title">loss</span>.<span class="title">item</span>()))</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"># <span class="type">Test</span> the model</span></span><br><span class="line"><span class="class">model.eval()  # eval mode (<span class="title">batchnorm</span> <span class="title">uses</span> <span class="title">moving</span> <span class="title">mean</span>/<span class="title">variance</span> <span class="title">instead</span> <span class="title">of</span> <span class="title">mini</span>-<span class="title">batch</span> <span class="title">mean</span>/<span class="title">variance</span>)</span></span><br><span class="line"><span class="class">with torch.no_grad():</span></span><br><span class="line"><span class="class">    correct = 0</span></span><br><span class="line"><span class="class">    total = 0</span></span><br><span class="line"><span class="class">    for images, labels in test_loader:</span></span><br><span class="line"><span class="class">        images = images.to(<span class="title">device</span>)</span></span><br><span class="line"><span class="class">        labels = labels.to(<span class="title">device</span>)</span></span><br><span class="line"><span class="class">        outputs = model(<span class="title">images</span>)</span></span><br><span class="line"><span class="class">        _, predicted = torch.max(<span class="title">outputs</span>.<span class="title">data</span>, 1)</span></span><br><span class="line"><span class="class">        total += labels.size(0)</span></span><br><span class="line"><span class="class">        correct += (<span class="title">predicted</span> == <span class="title">labels</span>).sum().item()</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">    print('<span class="type">Test</span> <span class="type">Accuracy</span> <span class="title">of</span> <span class="title">the</span> <span class="title">model</span> <span class="title">on</span> <span class="title">the</span> 10000 <span class="title">test</span> <span class="title">images</span>: &#123;&#125; %'.<span class="title">format</span>(100 * <span class="title">correct</span> / <span class="title">total</span>))</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"># <span class="type">Save</span> the model checkpoint</span></span><br><span class="line"><span class="class">torch.save(<span class="title">model</span>.<span class="title">state_dict</span>(), 'model.ckpt')</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/22/pytorch-basics4/" rel="next" title="pytorch-basics 4(feedforward neural network)">
+                <i class="fa fa-chevron-left"></i> pytorch-basics 4(feedforward neural network)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/22/Intermediate2-dnn/" rel="prev" title="Intermediate2-dnn">
+                Intermediate2-dnn <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -341,6 +473,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div class="ds-thread" data-thread-key="2018/06/22/Intermediate1-cnn/"
+           data-title="Intermediate1-cnn" data-url="http://liantaooo.github.io/2018/06/22/Intermediate1-cnn/">
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -361,8 +504,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -455,6 +607,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#MNIST"><span class="nav-number">1.</span> <span class="nav-text">MNIST</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#两个卷积-一个全连接-test-error-lt-1"><span class="nav-number">2.</span> <span class="nav-text">两个卷积, 一个全连接;test error &lt; 1%</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -604,6 +772,10 @@ setInterval("createtime()",250);
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
