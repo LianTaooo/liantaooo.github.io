@@ -576,7 +576,7 @@
 
       
         
-          <h3 id="逻辑回归，用neural-network-框架做"><a href="#逻辑回归，用neural-network-框架做" class="headerlink" title="逻辑回归，用neural  network 框架做"></a>逻辑回归，用neural  network 框架做</h3>
+          <h5 id="逻辑回归，用neural-network-框架做"><a href="#逻辑回归，用neural-network-框架做" class="headerlink" title="逻辑回归，用neural  network 框架做"></a>逻辑回归，用neural  network 框架做</h5>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/06/22/pytorch-basics3/#more" rel="contents">
@@ -741,7 +741,7 @@
 
       
         
-          <h3 id="一元线性回归，用neural-network-框架做"><a href="#一元线性回归，用neural-network-框架做" class="headerlink" title="一元线性回归，用neural  network 框架做"></a>一元线性回归，用neural  network 框架做</h3><h3 id="y-w-x-b"><a href="#y-w-x-b" class="headerlink" title="y = w*x + b"></a>y = w*x + b</h3>
+          <h5 id="一元线性回归，用neural-network-框架做"><a href="#一元线性回归，用neural-network-框架做" class="headerlink" title="一元线性回归，用neural  network 框架做"></a>一元线性回归，用neural  network 框架做</h5><h5 id="y-w-x-b"><a href="#y-w-x-b" class="headerlink" title="y = w*x + b"></a>y = w*x + b</h5>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/06/22/pytorch-basics2/#more" rel="contents">
@@ -868,7 +868,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  830
+                  834
                 </span>
               
 
@@ -906,7 +906,7 @@
 
       
         
-          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch </span><br><span class="line"><span class="keyword">import</span> torchvision</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> torchvision.transforms <span class="keyword">as</span> transforms</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ================================================================== #</span></span><br><span class="line"><span class="comment">#                         Table of Contents                          #</span></span><br><span class="line"><span class="comment"># ================================================================== #</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. Basic autograd example 1              </span></span><br><span class="line"><span class="comment"># 2. Basic autograd example 2          </span></span><br><span class="line"><span class="comment"># 3. Loading data from numpy               </span></span><br><span class="line"><span class="comment"># 4. Input pipline                        </span></span><br><span class="line"><span class="comment"># 5. Input pipline for custom dataset     </span></span><br><span class="line"><span class="comment"># 6. Pretrained model                    </span></span><br><span class="line"><span class="comment"># 7. Save and load model</span></span><br></pre></td></tr></table></figure>
+          <h5 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch </span><br><span class="line"><span class="keyword">import</span> torchvision</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> torchvision.transforms <span class="keyword">as</span> transforms</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ================================================================== #</span></span><br><span class="line"><span class="comment">#                         Table of Contents                          #</span></span><br><span class="line"><span class="comment"># ================================================================== #</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. Basic autograd example 1              </span></span><br><span class="line"><span class="comment"># 2. Basic autograd example 2          </span></span><br><span class="line"><span class="comment"># 3. Loading data from numpy               </span></span><br><span class="line"><span class="comment"># 4. Input pipline                        </span></span><br><span class="line"><span class="comment"># 5. Input pipline for custom dataset     </span></span><br><span class="line"><span class="comment"># 6. Pretrained model                    </span></span><br><span class="line"><span class="comment"># 7. Save and load model</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/06/21/pytorch-basics1/#more" rel="contents">
